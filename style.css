@@ -137,6 +137,70 @@ a{
 
 .head-nav .nav-menu li a:hover{
     color: #A0C63F;
-    text-shadow: -1px -2px #000;
+   
     transition: 1s ease;
 }
+
+/* banner styling */
+.banner-img{
+    position: relative;
+}
+
+.headline{
+    width: 35%;
+    position: absolute;
+    top: 32%;
+    left: 68%;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -1px 1px #627A2E;
+}
+
+.arrowleft, .arrowright{
+    width: 20px;
+    padding: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top: 41%;
+}
+
+.arrowleft{
+    left: 5%;
+}
+
+.arrowleft::before,.arrowright::before{
+  font-family: "FontAwesome";
+  color: #A0C63F;
+  float: left;
+  font-size: 20px;
+  margin: 0;
+  line-height: 16px;
+  text-indent: 0;
+}
+
+.arrowleft::before{
+    content: "\f536";
+}
+
+.arrowright{
+    right: 3%;
+}
+
+.arrowright::before{
+  content: "\f531";
+}
+
+.arrowleft:hover,.arrowright:hover{
+    background-color: #fff;
+    border: 3px solid transparent;
+    transition: 1s ease;
+}
+
