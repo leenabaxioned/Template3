@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -71,26 +71,36 @@
       <!-- business theme section starts -->
       <section class="business">
         <div class="wrapper">
-          <h2>welcome to elegantica - a minimal business theme</h2>
+          <h2 class="businesshead">welcome to <span>elegantica</span> - a minimal business theme</h2>
           <div class="logos">
             <div class="featurelogo">
-              <span class="support">Recycle</span>
-              <h3>Amazing <span>support</span></h3>
+              <div class="feature-border">
+                <span class="feature support">Recycle</span>
+              </div>
+              <h3>Amazing<span class="headspan"> support</span></h3>
             </div>
             <div class="featurelogo">
-              <span class="call">Call</span>
-              <h3>24 Hour <span>Availability</span></h3>
+              <div class="feature-border">
+                <span class="feature callfeature">Call</span>
+              </div>
+              <h3>24 Hour<span class="headspan"> Availability</span></h3>
             </div>
             <div class="featurelogo">
-              <span class="Web">Web</span>
-              <h3>Web <span>Design</span></h3>
+              <div class="feature-border">
+                <span class="feature web">Web</span>
+              </div>
+              <h3>Web<span class="headspan"> Design</span></h3>
             </div>
             <div class="featurelogo">
-              <span class="mobile">mobile</span>
-              <h3>Mobile <span>Development</span></h3>
+              <div class="feature-border">
+                <span class="feature mobile">mobile</span>
+              </div>
+              <h3>Mobile <span class="headspan"> Development</span></h3>
             </div>
           </div>
           <div class="porfolio">
+            <h2 class="porthead">Recent from <span>portfolio</span></h2>
+            <div class="portfolio-cards">
             <div class="cards">
               <figure>
                 <img
@@ -101,11 +111,11 @@
               </figure>
               <div class="card-content">
                 <h3>business cards</h3>
-                <a class="video" href="#FIXME" title="video" target="_self"
+                <a class="btn video" href="#FIXME" title="video" target="_self"
                   >Video</a
                 >
                 <a
-                  class="interview"
+                  class="btn interview"
                   href="#FIXME"
                   title="interview"
                   target="_self"
@@ -113,9 +123,7 @@
                 >
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates esse animi, accusantium ex enim iusto facere
-                  laborum amet accusamus ad, vero fuga totam mollitia a unde
-                  delectus repellendus repudiandae. Cum.
+                  Voluptates esse animi, accusantium ex enim iusto.
                 </p>
               </div>
             </div>
@@ -129,11 +137,11 @@
               </figure>
               <div class="card-content">
                 <h3>moo minicards</h3>
-                <a class="video" href="#FIXME" title="video" target="_self"
+                <a class="btn video" href="#FIXME" title="video" target="_self"
                   >Video</a
                 >
                 <a
-                  class="business"
+                  class="btn business"
                   href="#FIXME"
                   title="business"
                   target="_self"
@@ -141,9 +149,7 @@
                 >
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates esse animi, accusantium ex enim iusto facere
-                  laborum amet accusamus ad, vero fuga totam mollitia a unde
-                  delectus repellendus repudiandae. Cum.
+                  Voluptates esse animi, accusantium ex enim iusto.
                 </p>
               </div>
             </div>
@@ -157,17 +163,15 @@
               </figure>
               <div class="card-content">
                 <h3>say it in print</h3>
-                <a class="audio" href="#FIXME" title="audio" target="_self"
+                <a class="btn audio" href="#FIXME" title="audio" target="_self"
                   >Audio</a
                 >
-                <a class="print" href="#FIXME" title="print" target="_self"
+                <a class="btn print" href="#FIXME" title="print" target="_self"
                   >Print</a
                 >
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates esse animi, accusantium ex enim iusto facere
-                  laborum amet accusamus ad, vero fuga totam mollitia a unde
-                  delectus repellendus repudiandae. Cum.
+                  Voluptates esse animi, accusantium ex enim iusto.
                 </p>
               </div>
             </div>
@@ -181,11 +185,11 @@
               </figure>
               <div class="card-content">
                 <h3>graphics in print</h3>
-                <a class="video" href="#FIXME" title="video" target="_self"
+                <a class="btn video" href="#FIXME" title="video" target="_self"
                   >Video</a
                 >
                 <a
-                  class="graphics"
+                  class="btn graphics"
                   href="#FIXME"
                   title="graphics"
                   target="_self"
@@ -193,16 +197,15 @@
                 >
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates esse animi, accusantium ex enim iusto facere
-                  laborum amet accusamus ad, vero fuga totam mollitia a unde
-                  delectus repellendus repudiandae. Cum.
+                  Voluptates esse animi, accusantium ex enim iusto.
                 </p>
               </div>
             </div>
           </div>
+          </div>
           <div class="advertiser">
             <div class="wrapper">
-                <h2>Our major advertisers</h2>
+              <h2>Our major advertisers</h2>
               <figure>
                 <img
                   class="advertiser-img"
@@ -380,7 +383,9 @@
                   <a href="#FIXME" class="nav-link active" title="Home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#FIXME" class="nav-link" title="Porfolio">Porfolio</a>
+                  <a href="#FIXME" class="nav-link" title="Porfolio"
+                    >Porfolio</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a href="#FIXME" class="nav-link" title="Products"
@@ -388,9 +393,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="#FIXME" class="nav-link" title="Contact"
-                    >Contact</a
-                  >
+                  <a href="#FIXME" class="nav-link" title="Contact">Contact</a>
                 </li>
               </ul>
               <h2>@2013 All Rights Reserved</h2>
