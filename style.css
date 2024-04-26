@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: "Gill Sans", sans-serif;
+    font-family: Monospace;
     overflow-x: hidden;
 }
 ol, ul {
@@ -178,7 +178,7 @@ a{
 
 .arrowleft::before,.arrowright::before{
   font-family: "FontAwesome";
-  color: #A0C63F;
+  color: #fff;
   float: left;
   font-size: 20px;
   margin: 0;
@@ -204,3 +204,166 @@ a{
     transition: 1s ease;
 }
 
+.arrowleft:hover::before,.arrowright:hover::before{
+    color: #A0C63F;
+}
+
+/* business theme section styling  */
+.business{
+    background-color: #E8E8E8;
+}
+
+.businesshead{
+    padding: 40px 0;
+    border-bottom: 2px dashed #BFC0C6;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.business h2 span{
+    color: #A0C63F;
+}
+
+/* logos section styling */
+.logos{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature{
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid #BFC0C6;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #A0C63F;
+    text-indent: -9999px;
+}
+
+.feature-border{
+    padding: 15px;
+    border: 1px solid #BFC0C6;
+    border-radius: 50%;
+}
+
+.feature::before{
+    font-family: "FontAwesome";
+    color: #fff;
+    float: left;
+    font-size: 75px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .support::before{
+    content: "\f1cd";
+  }
+
+  .callfeature::before{
+    content: "\f095";
+  }
+
+  .web::before{
+    content: "\f140";
+  }
+
+  .mobile::before{
+    content: "\f10b";
+  }
+
+  .featurelogo h3{
+    padding-top: 15px;
+    font-size: 30px;
+    color: #1B1B1B;
+    text-align: center;
+  }
+
+  .headspan{
+    padding-top: 10px;
+    display: block;
+    font-size: 20px;
+  }
+
+  /* porfolio styling    */
+.porthead{
+    padding: 20px 0;
+    font-size: 25px;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.porthead span{
+    color: #A0C63F;
+}
+
+.porthead::before,
+.porthead::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.2rem dashed #BFC0C6;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+.porthead::before{
+    width: 3%;
+}
+
+.porthead::after {
+    width: 56%;
+}
+
+.portfolio-cards, .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards{
+    border: 1px solid #BFC0C6;
+    flex-basis: 49%;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.card-content{
+    flex-basis: 46%;
+}
+
+.card-content h3{
+    padding: 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #252525
+}
+
+.card-content p{
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 5px;
+    width: 28%;
+    margin: 5px auto;
+    background-color: #A0C63F;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    border: 1px solid #A0C63F;
+    color: #A0C63F;
+    transition: 1s ease;
+  }
