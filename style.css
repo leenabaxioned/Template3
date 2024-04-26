@@ -81,25 +81,6 @@ a{
     flex-basis: 50%;
 }
 
-/* .pull{
-    position: relative;
-    left: 94%;
-    font-size: 12px;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.pull::after{
-    font-family: "FontAwsome";
-    content: "\f02e";
-    float: right;
-    margin: 0;
-    line-height: 16px;
-    color: #92B34B;
-    font-size: 12px;
-    text-indent: 0;
-} */
-
 .pull{
     display: block;
     overflow: hidden;
@@ -210,7 +191,9 @@ a{
 
 /* business theme section styling  */
 .business{
+    position: relative;
     background-color: #E8E8E8;
+    border-bottom: 3px solid #E8E8E8;
 }
 
 .businesshead{
@@ -367,3 +350,69 @@ a{
     color: #A0C63F;
     transition: 1s ease;
   }
+
+  /* advertisers section styling */
+  .advertiser{
+    padding-bottom: 50px;
+}
+
+.advertisehead{
+    padding: 20px 0;
+    font-size: 25px;
+    color: #252525;
+    text-transform: uppercase;
+  }
+
+.advertisehead span{
+    color: #A0C63F;
+}
+
+.advertisehead::before,
+.advertisehead::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.2rem dashed #BFC0C6;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+.advertisehead::before{
+    width: 3%;
+}
+
+.advertisehead::after {
+    width: 56%;
+}
+
+.advertisersimg{
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 0%;
+    right: 13%;
+    width: 12px;
+    height: 12px;
+    padding:17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-color: #A0C63F;
+    border-radius: 50%;
+    clear: both;
+}
+
+.scroll::before{
+  font-family: "FontAwesome";
+  content: "\f106";
+  color: #fff;
+  float: left;
+  font-size: 15px;
+  margin: 0;
+  line-height: 16px;
+  text-indent: 0;
+}
